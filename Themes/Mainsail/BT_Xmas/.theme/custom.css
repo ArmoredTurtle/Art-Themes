@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'Apex Mk2';
+    src: url('ApexMk2-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apex Mk2';
+    src: url('ApexMk2-BoldExtended.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.v-application {
+    font-family: 'Apex Mk2', sans-serif;
+}
+
+#nav-header .v-toolbar__title {
+    font-size: 24px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff; /* White */
+    background-attachment: fixed; /* Keeps background stationary */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.v-navigation-drawer {
+    background-color: transparent !important;
+}
+
+.v-application .info,
+.v-application .primary {
+    background-color: #1E8451 !important; /* Green */
+    border-color: #1E8451 !important;
+}
+
+
+/*.v-application .warning {
+    background-color: #b9a46a !important;
+    border-color: #e10000 !important;
+}*/
+
+.v-application .error {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.v-application .orange--text {
+    color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+
+.v-application .orange {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.v-application .v-toolbar__title.text-no-wrap {
+    font-weight: bold;
+    color: #ffffff; /* White */
+}
+
+.v-application a {
+    color: #378b29; /* Green */
+}
+
+.v-application .text-no-wrap {
+    color: #ffffff; /* White */
+}
+
+.v-application .primary--text,
+.v-application .info--text {
+    color: #ffffff !important; /* White */
+}
+
+.v-application .warning--text {
+    color: #ffffff !important; /* White */
+}
+
+.v-application .machine-configfiles-panel .navigation-container,
+.v-application .machine-systemload-panel .text-body-2,
+.v-application .text--disabled {
+    font-family: Roboto, sans-serif !important;
+    line-height: 1.5;
+}
+
+/* Temperature table */
+.v-application .temperature-panel-table,
+.v-application .history-statistics-panel .v-data-table {
+    font-family: 'Apex Mk2', sans-serif;
+}
+
+/* Update Manager version text */
+.v-application .update-manager-list .row span,
+.v-application .update-manager-list .info--text,
+.v-application .update-manager-list .v-alert__content {
+    font-family: Roboto, sans-serif;
+}
+
+/* System Loads */
+.v-application .machine-systemload-panel .text-body-2 {
+    color: #ffffff; /* White */
+}
+
+/* Temperature section mcus */
+.v-application .machine-systemload-panel .text-body-2 span[aria-haspopup="true"] {
+    color: #378b29 !important; /* Green */
+    font-family: 'Apex Mk2', sans-serif;
+    font-weight: bold;
+}
+
+/* Job Details Panel */
+.os-viewport .text-right.col {
+    color: #ffffff; /* White */
+    font-family: Roboto, sans-serif;
+}
+
+/* toolbar title */
+.v-toolbar__title {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: #378b29; /* Green */
+}
+
+.v-application .text-button {
+    color: #378b29; /* Green */
+}
+
+/* button accent color */
+.v-btn:not(.v-btn--outlined).accent,
+.v-btn:not(.v-btn--outlined).info,
+.v-btn:not(.v-btn--outlined).primary,
+.v-btn:not(.v-btn--outlined).secondary {
+    color: #ffffff; /* White */
+}
+
+.v-btn:not(.v-btn--outlined).warning {
+    color: #ffffff; /* Green */
+}
+
+.v-btn:not(.v-btn--outlined).success {
+    color: #000000; /* Black */
+}
+
+/* icon color */
+.mdi-set, .mdi:before {
+    color: #ffffff; /* White */
+}
+
+/* column text color */
+.col {
+    color: #378b29; /* Green */
+}
+
+/* file name color */
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td,
+.v-data-table > .v-data-table__wrapper > table > thead > tr > td {
+    color: #ffffff; /* White */
+}
+
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td.text-right {
+    color: #378b29; /* Green */
+}
+
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td.text-right:last-child {
+    color: #ffffff; /* White */
+}
+
+.v-input--selection-controls__input {
+    color: #378b29 !important; /* Green */
+}
+
+/* set table font to default */
+.v-data-table {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+/* editor text color */
+.prism-editor-wrapper .prism-editor__editor, .prism-editor-wrapper .prism-editor__textarea {
+    color: #ffffff; /* White */
+}
+
+/* nav title color */
+nav ul.navi .nav-link {
+    color: #378b29; /* Green */
+}
+
+/* active nav title background */
+nav ul.navi .nav-link.router-link-active,
+nav ul.navi .nav-link:hover,
+nav ul.navi li.active > .nav-link {
+    background-attachment: fixed; /* Keeps background stationary */
+}
+
+
+.theme--dark.v-icon,
+.v-btn,
+.v-list {
+    color: #ffffff; /* White */
+}
+
+.theme--dark.v-btn.v-btn--icon {
+    color: #378b29; /* Green */
+}
+
+.v-input, 
+.v-input input, 
+.v-input textarea {
+    color: #ffffff; /* White */
+}
+
+/* Active List Icon */
+.v-list .v-list-item--active .v-icon {
+    color: #378b29; /* Green */
+}
+
+/* right side icons */
+.v-btn.v-btn--icon {
+    color: #378b29; /* Green */
+}
+
+/* sidebar opacity */
+/*.v-navigation-drawer__content,
+.v-navigation-drawer__append {
+    background-color: #00000063;
+}*/
+
+/* file text color */
+.v-card__title {
+    color: #378b29; /* Green */
+}
+
+.v-tooltip,
+.v-label .v-label--active {
+    background: #378b29; /* Green */
+}
+
+/* active menu item right bar */
+.active-nav-item[data-v-99ab1bec] {
+    border-right: 4px solid #378b29; /* Green */
+}
+
+/* remove alert background transparency */
+.v-alert--text {
+    background: #000000 !important;
+}
+
+/* Klipper shutdown text */
+.v-application .v-alert.warning--text {
+    color: #ffffff !important; /* White */
+}
+
+/* Circle Toolhead controls */
+svg g.home_button[data-v-8e4f3fa8], 
+svg a#home_all_center[data-v-8e4f3fa8],
+svg a#tilt_adjust.warning[data-v-8e4f3fa8],
+svg a#stepper_off.warning[data-v-8e4f3fa8] {
+    fill: #ffffff; /* Red*/
+}
+
+/* Homed */
+svg .homed g.home_button[data-v-8e4f3fa8], 
+svg .homed a#home_all_center[data-v-8e4f3fa8],
+svg a#tilt_adjust.primary[data-v-8e4f3fa8], 
+svg a#stepper_off.primary[data-v-8e4f3fa8] {
+    fill: #378b29; /* Green */
+}
+
+/* AFC Panel */
+.afc-panel[data-v-51a463d8]{
+    color: #ffffff; /* Red*/
+}
+
+.afc-panel[data-v-51a463d8] .spool-card .filament-reel svg path {
+    fill: #000000 !important;
+}
+
+.afc-panel[data-v-51a463d8] .spool-card h3 {
+    color: #ffffff;
+}
+
+.afc-panel[data-v-51a463d8] .spool-card p:nth-of-type(1) {
+    color: #378b29; /* Green */
+}
+
+/* Editor Panel */
+.editor-dialog .subheading {
+    font-family: Roboto, sans-serif;
+}
+
+/* File Name Editor */
+.v-text-field__slot {
+    font-family: Roboto, sans-serif;
+}
+
+.v-image__image {
+    background-position: bottom !important;
+}
+
+/* Snow!! */
+body {
+  position: relative;
+  overflow: hidden; /* Prevent scrollbars caused by animations */
+  background: #0a0a0a; /* Optional: Background color */
+}
+
+/* Snowflakes with pseudo-elements */
+body::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -25vw;
+  width: 150vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 1;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 1) 3px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 5px);
+  background-size: 15% 15%, 10% 10%, 7% 7%, 15% 15%;
+  background-repeat: repeat;
+
+  animation-delay: 0s, 0s;
+  animation: snowfall 20s linear infinite, fadeOut 20s linear infinite;
+}
+
+body::after {
+  opacity: 0;
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: -100vh; /* Start snowflakes from the top of the screen */
+  left: -25vw;
+  width: 150vw;
+  height: 200vh; /* Cover twice the height of the screen */
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 3px, transparent 2px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 4px, transparent 3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px);
+  background-size: 15% 12%, 10% 10%, 7% 7%, 15% 15%;
+  background-repeat: repeat;
+
+  animation-delay: 10s;
+  animation: snowfall 20s linear infinite 10s, fadeOut 20s linear infinite 10s;
+}
+
+/* Snowfall animation */
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100vh) translateX(-5vw);
+  }
+  25% {
+    transform: translateY(-50vh) translateX(0vw);
+  }
+  50% {
+    transform: translateY(0vh) translateX(5vw);
+  }
+  75% {
+    transform: translateY(50vh) translateX(0vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-5vw);
+  }
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1; /* Start fading out after 75% of the fall */
+  }
+  100% {
+    opacity: 0; /* Fully faded out by the end of the fall */
+  }
+}
+

@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'Apex Mk2';
+    src: url('ApexMk2-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apex Mk2';
+    src: url('ApexMk2-BoldExtended.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.v-application {
+    font-family: 'Apex Mk2', sans-serif;
+}
+
+#nav-header .v-toolbar__title {
+    font-size: 24px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #B9A46A; /* Gold */
+    background-attachment: fixed; /* Keeps background stationary */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.v-navigation-drawer {
+    background-color: transparent !important;
+}
+
+.v-image__image {
+    background-position: bottom !important;
+}
+
+.v-application .info,
+.v-application .primary {
+    background-color: #1E8451 !important; /* Green */
+    border-color: #1E8451 !important;
+}
+
+
+.v-application .warning {
+    background-color: #b9a46a !important; /* Gold */
+    border-color: #b9a46a !important;
+}
+
+.v-application .error {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.v-application .orange--text {
+    color: #b9a46a !important;
+    caret-color: #b9a46a !important;
+}
+
+.v-application .orange {
+    background-color: #b9a46a !important;
+    border-color: #b9a46a !important;
+}
+
+.v-application .v-toolbar__title.text-no-wrap {
+    font-weight: bold;
+    color: #b9a46a; /* Gold */
+}
+
+.v-application a {
+    color: #1E8451; /* Green */
+}
+
+.v-application .text-no-wrap {
+    color: #b9a46a; /* Gold */
+}
+
+.v-application .primary--text,
+.v-application .info--text {
+    color: #b9a46a !important; /* Gold */
+}
+
+.v-application .warning--text {
+    color: #1E8451 !important; /* Green */
+}
+
+.v-application .machine-configfiles-panel .navigation-container,
+.v-application .machine-systemload-panel .text-body-2,
+.v-application .text--disabled {
+    font-family: Roboto, sans-serif !important;
+    line-height: 1.5;
+}
+
+/* Temperature table */
+.v-application .temperature-panel-table,
+.v-application .history-statistics-panel .v-data-table {
+    font-family: 'Apex Mk2', sans-serif;
+}
+
+/* Update Manager version text */
+.v-application .update-manager-list .row span,
+.v-application .update-manager-list .info--text,
+.v-application .update-manager-list .v-alert__content {
+    font-family: Roboto, sans-serif;
+}
+
+/* System Loads */
+.v-application .machine-systemload-panel .text-body-2 {
+    color: #b9a46a; /* Gold */
+}
+
+/* Temperature section mcus */
+.v-application .machine-systemload-panel .text-body-2 span[aria-haspopup="true"] {
+    color: #1E8451 !important; /* Green */
+    font-family: 'Apex Mk2', sans-serif;
+    font-weight: bold;
+}
+
+/* Job Details Panel */
+.os-viewport .text-right.col {
+    color: #b9a46a; /* Gold */
+    font-family: Roboto, sans-serif;
+}
+
+/* toolbar title */
+.v-toolbar__title {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: #1E8451; /* Green */
+}
+
+.v-application .text-button {
+    color: #1E8451; /* Green */
+}
+
+/* button accent color */
+.v-btn:not(.v-btn--outlined).accent,
+.v-btn:not(.v-btn--outlined).info,
+.v-btn:not(.v-btn--outlined).primary,
+.v-btn:not(.v-btn--outlined).secondary,
+.v-btn:not(.v-btn--outlined).warning {
+    color: #B9A46A; /* Gold */
+}
+
+.v-btn:not(.v-btn--outlined).warning {
+    color: #1E8451; /* Green */
+}
+
+.v-btn:not(.v-btn--outlined).success {
+    color: #000000; /* Black */
+}
+
+/* icon color */
+.mdi-set, .mdi:before {
+    color: #B9A46A; /* Gold */
+}
+
+/* column text color */
+.col {
+    color: #1E8451; /* Green */
+}
+
+/* file name color */
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td,
+.v-data-table > .v-data-table__wrapper > table > thead > tr > td {
+    color: #B9A46A; /* Gold */
+}
+
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td.text-right {
+    color: #1E8451; /* Green */
+}
+
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td.text-right:last-child {
+    color: #B9A46A; /* Gold */
+}
+
+.v-input--selection-controls__input {
+    color: #1E8451 !important; /* Green */
+}
+
+/* set table font to default */
+.v-data-table {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+/* editor text color */
+.prism-editor-wrapper .prism-editor__editor, .prism-editor-wrapper .prism-editor__textarea {
+    color: #B9A46A; /* Gold */
+}
+
+/* nav title color */
+nav ul.navi .nav-link {
+    color: #1E8451; /* Green */
+}
+
+/* active nav title background */
+nav ul.navi .nav-link.router-link-active,
+nav ul.navi .nav-link:hover,
+nav ul.navi li.active > .nav-link {
+    background: linear-gradient(to right, #1E8451, #B9A46A); /* Gradient from green to gold */
+    background-attachment: fixed; /* Keeps background stationary */
+}
+
+
+.theme--dark.v-icon,
+.v-btn,
+.v-list {
+    color: #B9A46A; /* Gold */
+}
+
+.theme--dark.v-btn.v-btn--icon {
+    color: #1E8451; /* Green */
+}
+
+.v-input, 
+.v-input input, 
+.v-input textarea {
+    color: #B9A46A; /* Gold */
+}
+
+/* Active List Icon */
+.v-list .v-list-item--active .v-icon {
+    color: #1E8451; /* Green */
+}
+
+/* right side icons */
+.v-btn.v-btn--icon {
+    color: #1E8451; /* Green */
+}
+
+/* sidebar opacity */
+.v-navigation-drawer__content,
+.v-navigation-drawer__append {
+    background-color: #00000063;
+}
+
+/* file text color */
+.v-card__title {
+    color: #1E8451; /* Green */
+}
+
+.v-tooltip,
+.v-label .v-label--active {
+    background: #1E8451; /* Green */
+}
+
+/* active menu item right bar */
+.active-nav-item[data-v-99ab1bec] {
+    border-right: 4px solid #1E8451; /* Green */
+}
+
+/* remove alert background transparency */
+.v-alert--text {
+    background: #000000 !important;
+}
+
+/* Klipper shutdown text */
+.v-application .v-alert.warning--text {
+    color: #B9A46A !important; /* Gold */
+}
+
+/* Circle Toolhead controls */
+svg g.home_button[data-v-8e4f3fa8], 
+svg a#home_all_center[data-v-8e4f3fa8],
+svg a#tilt_adjust.warning[data-v-8e4f3fa8],
+svg a#stepper_off.warning[data-v-8e4f3fa8] {
+    fill: #B9A46A; /* Gold */
+}
+
+/* Homed */
+svg .homed g.home_button[data-v-8e4f3fa8], 
+svg .homed a#home_all_center[data-v-8e4f3fa8],
+svg a#tilt_adjust.primary[data-v-8e4f3fa8], 
+svg a#stepper_off.primary[data-v-8e4f3fa8] {
+    fill: #1E8451; /* Green */
+}
+
+/* AFC Panel */
+.afc-panel[data-v-51a463d8]{
+    color: #B9A46A; /* Gold */
+}
+
+.afc-panel[data-v-51a463d8] .spool-card .filament-reel svg path {
+    fill: #000000 !important;
+}
+
+.afc-panel[data-v-51a463d8] .spool-card h3 {
+    color: #ffffff;
+}
+
+.afc-panel[data-v-51a463d8] .spool-card p:nth-of-type(1) {
+    color: #1E8451; /* Green */
+}
+
+/* Editor Panel */
+.editor-dialog .subheading {
+    font-family: Roboto, sans-serif;
+}
+
+/* File Name Editor */
+.v-text-field__slot {
+    font-family: Roboto, sans-serif;
+}
