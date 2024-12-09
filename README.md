@@ -4,8 +4,17 @@ Welcome to the **Armored Turtle Art/Themes Collection**! All content is distribu
 
 ## 📂 Repository Structure
 
-- `Themes/`: Contains individual theme directories.
-- `Artwork/`: Logos and Artwork.
+- `Themes/`: Contains different themes for Mainsail and Fluidd
+- `Artwork/`: Logos and Artwork
+
+## 🎨 Installing a Custom Theme
+
+To install a custom theme:
+
+1. Navigate to the `Themes/` directory in this repository.
+2. Follow the instructions provided in the `README.md` file located in the `Themes` folder.
+
+[Click here to view the README in the Themes folder](./Themes/README.md)
 
 ## 📜 License
 
