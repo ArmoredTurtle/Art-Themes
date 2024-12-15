@@ -79,6 +79,34 @@
     color: #ffffff !important; /* White */
 }
 
+
+/* Keep console colors standard */
+.v-application .miniconsole-panel .warning--text,
+.v-application .consoleTable .warning--text {
+    color: var(--v-warning-base) !important;
+}
+
+.v-application .miniconsole-panel .info--text,
+.v-application .consoleTable .info--text {
+    color: var(--v-info-base) !important;
+}
+
+.v-application .miniconsole-panel .primary--text,
+.v-application .consoleTable .primary--text {
+    color: var(--v-primary-base) !important;
+}
+
+.v-application .miniconsole-panel .error--text,
+.v-application .consoleTable .error--text {
+    color: var(--v-error-base) !important;
+}
+
+.v-application .miniconsole-panel .success--text,
+.v-application .consoleTable .success--text {
+    color: var(--v-success-base) !important;
+}
+
+
 .v-application .machine-configfiles-panel .navigation-container,
 .v-application .machine-systemload-panel .text-body-2,
 .v-application .text--disabled {
