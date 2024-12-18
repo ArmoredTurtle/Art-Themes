@@ -305,20 +305,20 @@ svg a#stepper_off.primary[data-v-8e4f3fa8] {
 }
 
 /* AFC Panel */
-.afc-panel[data-v-51a463d8]{
-    color: #B9A46A; /* Gold */
+.v-application .afc-control-panel .spool-card-header .success--text {
+    color: var(--v-success-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card .filament-reel svg path {
-    fill: #000000 !important;
+.v-application .afc-control-panel .spool-card-header .warning--text {
+    color: var(--v-warning-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card h3 {
-    color: #ffffff;
+.v-application .afc-control-panel .spool-card-header .primary--text {
+    color: var(--v-primary-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card p:nth-of-type(1) {
-    color: #1E8451; /* Green */
+.v-application .afc-control-panel .spool-card-header .error--text {
+    color: var(--v-error-base) !important;
 }
 
 /* Editor Panel */

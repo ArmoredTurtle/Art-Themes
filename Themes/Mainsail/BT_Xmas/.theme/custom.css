@@ -299,20 +299,20 @@ svg a#stepper_off.primary[data-v-8e4f3fa8] {
 }
 
 /* AFC Panel */
-.afc-panel[data-v-51a463d8]{
-    color: #ffffff; /* Red*/
+.v-application .afc-control-panel .spool-card-header .success--text {
+    color: var(--v-success-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card .filament-reel svg path {
-    fill: #000000 !important;
+.v-application .afc-control-panel .spool-card-header .warning--text {
+    color: var(--v-warning-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card h3 {
-    color: #ffffff;
+.v-application .afc-control-panel .spool-card-header .primary--text {
+    color: var(--v-primary-base) !important;
 }
 
-.afc-panel[data-v-51a463d8] .spool-card p:nth-of-type(1) {
-    color: #378b29; /* Green */
+.v-application .afc-control-panel .spool-card-header .error--text {
+    color: var(--v-error-base) !important;
 }
 
 /* Editor Panel */
@@ -346,7 +346,7 @@ body::before {
   width: 150vw;
   height: 200vh;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
   background-image: 
     radial-gradient(circle, rgba(255, 255, 255, 1) 3px, transparent 4px),
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
@@ -360,7 +360,7 @@ body::before {
 
 body::after {
   opacity: 0;
-  z-index: 0;
+  z-index: 2;
   content: '';
   position: absolute;
   top: -100vh; /* Start snowflakes from the top of the screen */
