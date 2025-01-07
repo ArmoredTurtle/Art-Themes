@@ -299,19 +299,23 @@ svg a#stepper_off.primary[data-v-8e4f3fa8] {
 }
 
 /* AFC Panel */
-.v-application .afc-control-panel .spool-card-header .success--text {
+.v-application .afc-control-panel .spool-card-header .success--text,
+.v-application .afc-control-panel .lane-status .success--text {
     color: var(--v-success-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .warning--text {
+.v-application .afc-control-panel .spool-card-header .warning--text,
+.v-application .afc-control-panel .lane-status .warning--text {
     color: var(--v-warning-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .primary--text {
+.v-application .afc-control-panel .spool-card-header .primary--text,
+.v-application .afc-control-panel .lane-status .primary--text {
     color: var(--v-primary-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .error--text {
+.v-application .afc-control-panel .spool-card-header .error--text,
+.v-application .afc-control-panel .lane-status .error--text {
     color: var(--v-error-base) !important;
 }
 
@@ -330,15 +334,17 @@ svg a#stepper_off.primary[data-v-8e4f3fa8] {
 }
 
 /* Snow!! */
-body {
+body,
+.v-application,
+.v-overlay,
+.v-main {
   position: relative;
   overflow: hidden; /* Prevent scrollbars caused by animations */
-  background: #0a0a0a; /* Optional: Background color */
 }
 
 /* Snowflakes with pseudo-elements */
 body::before {
-  opacity: 0;
+  opacity: 0.9;
   content: '';
   position: absolute;
   top: -100vh;
@@ -353,48 +359,167 @@ body::before {
     radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 5px);
   background-size: 15% 15%, 10% 10%, 7% 7%, 15% 15%;
   background-repeat: repeat;
-
-  animation-delay: 0s, 0s;
-  animation: snowfall 20s linear infinite, fadeOut 20s linear infinite;
+  animation: snowfall-left 22s linear infinite, fadeOut 22s linear infinite;
+  animation-fill-mode: backwards;
 }
 
 body::after {
-  opacity: 0;
-  z-index: 2;
+  opacity: 0.8;
   content: '';
   position: absolute;
-  top: -100vh; /* Start snowflakes from the top of the screen */
+  top: -100vh;
   left: -25vw;
   width: 150vw;
-  height: 200vh; /* Cover twice the height of the screen */
+  height: 200vh;
   pointer-events: none;
+  z-index: 2;
   background-image: 
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 3px, transparent 2px),
     radial-gradient(circle, rgba(255, 255, 255, 0.6) 4px, transparent 3px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px);
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 4px, transparent 2px);
   background-size: 15% 12%, 10% 10%, 7% 7%, 15% 15%;
   background-repeat: repeat;
-
-  animation-delay: 10s;
-  animation: snowfall 20s linear infinite 10s, fadeOut 20s linear infinite 10s;
+  animation: snowfall-right 24s linear infinite 5s, fadeOut 24s linear infinite 5s;
+  animation-fill-mode: backwards;
+}
+.main::before {
+  opacity: 0.9;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -15vw;
+  width: 150vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 3;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 1) 3px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 2px, transparent 2px);
+  background-size: 15% 15%, 10% 10%, 7% 7%, 15% 15%;
+  background-repeat: repeat;
+  animation: snowfall-right 18s linear infinite, fadeOut 18s linear infinite;
+  animation-fill-mode: backwards;
 }
 
-/* Snowfall animation */
-@keyframes snowfall {
+.main::after {
+  opacity: 0.8;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -25vw;
+  width: 150vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 2;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 3px, transparent 2px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 4px, transparent 3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 4px, transparent 2px);
+  background-size: 15% 12%, 10% 10%, 7% 7%, 15% 15%;
+  background-repeat: repeat;
+  animation: snowfall-left 20s linear infinite 5s, fadeOut 20s linear infinite 3s;
+  animation-fill-mode: backwards;
+}
+
+.v-application::before {
+  opacity: 0.85;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -30vw;
+  width: 160vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 3;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 1) 2px, transparent 3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 3px);
+  background-size: 12% 12%, 10% 10%, 6% 6%;
+  background-repeat: repeat;
+  animation: snowfall-left 22s linear infinite 2s, fadeOut 22s linear infinite 2s;
+  animation-fill-mode: backwards;
+}
+
+.v-application::after {
+  opacity: 0.75;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -20vw;
+  width: 140vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 2;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 3px, transparent 2px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.5) 2px, transparent 3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px);
+  background-size: 14% 10%, 9% 9%, 7% 7%;
+  background-repeat: repeat;
+  animation: snowfall-right 25s linear infinite 8s, fadeOut 25s linear infinite 8s;
+  animation-fill-mode: backwards;
+}
+
+.v-overlay::before {
+  opacity: 0.9;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -35vw;
+  width: 170vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 3;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 1) 4px, transparent 5px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.85) 3px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.95) 2px, transparent 3px);
+  background-size: 16% 16%, 11% 11%, 8% 8%;
+  background-repeat: repeat;
+  animation: snowfall-left 24s linear infinite 3s, fadeOut 24s linear infinite 7s;
+  animation-fill-mode: backwards;
+}
+
+.v-overlay::after {
+  opacity: 0.7;
+  content: '';
+  position: absolute;
+  top: -100vh;
+  left: -25vw;
+  width: 150vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 2;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 3px, transparent 2px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 2px, transparent 3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 3px, transparent 2px);
+  background-size: 15% 12%, 10% 10%, 7% 7%;
+  background-repeat: repeat;
+  animation: snowfall-right 28s linear infinite 6s, fadeOut 28s linear infinite 9s;
+  animation-fill-mode: backwards;
+}
+
+/* Snowfall animations */
+@keyframes snowfall-left {
   0% {
-    transform: translateY(-100vh) translateX(-5vw);
-  }
-  25% {
-    transform: translateY(-50vh) translateX(0vw);
-  }
-  50% {
-    transform: translateY(0vh) translateX(5vw);
-  }
-  75% {
-    transform: translateY(50vh) translateX(0vw);
+    transform: translateY(-100vh) translateX(-10vw);
   }
   100% {
-    transform: translateY(100vh) translateX(-5vw);
+    transform: translateY(100vh) translateX(10vw);
+  }
+}
+
+@keyframes snowfall-right {
+  0% {
+    transform: translateY(-100vh) translateX(10vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-10vw);
   }
 }
 
@@ -403,11 +528,13 @@ body::after {
   0% {
     opacity: 1;
   }
-  75% {
+  85% {
     opacity: 1; /* Start fading out after 75% of the fall */
   }
   100% {
     opacity: 0; /* Fully faded out by the end of the fall */
   }
 }
+
+
 

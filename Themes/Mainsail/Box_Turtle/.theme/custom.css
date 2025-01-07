@@ -305,19 +305,23 @@ svg a#stepper_off.primary[data-v-8e4f3fa8] {
 }
 
 /* AFC Panel */
-.v-application .afc-control-panel .spool-card-header .success--text {
+.v-application .afc-control-panel .spool-card-header .success--text,
+.v-application .afc-control-panel .lane-status .success--text {
     color: var(--v-success-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .warning--text {
+.v-application .afc-control-panel .spool-card-header .warning--text,
+.v-application .afc-control-panel .lane-status .warning--text {
     color: var(--v-warning-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .primary--text {
+.v-application .afc-control-panel .spool-card-header .primary--text,
+.v-application .afc-control-panel .lane-status .primary--text {
     color: var(--v-primary-base) !important;
 }
 
-.v-application .afc-control-panel .spool-card-header .error--text {
+.v-application .afc-control-panel .spool-card-header .error--text,
+.v-application .afc-control-panel .lane-status .error--text {
     color: var(--v-error-base) !important;
 }
 
